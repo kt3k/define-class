@@ -1,4 +1,4 @@
-# define-class v1.0.0
+# define-class v1.1.0
 
 > Define custom class easy
 

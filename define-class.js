@@ -1,6 +1,6 @@
 
 /**
- * define-class.js v1.0.0
+ * define-class.js v1.1.0
  * author: Yoshiya Hinosawa ( https://github.com/kt3k )
  * license: MIT
  */
