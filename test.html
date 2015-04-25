@@ -1,0 +1,32 @@
+
+
+<script src="./bower_components/jquery/dist/jquery.js"></script>
+<script src="./bower_components/custom-class/custom-class.js"></script>
+<script src="./bower_components/subclassjs/index.js"></script>
+
+<script src="./define-class.js"></script>
+
+
+<script>
+
+$.defineClass('my-class', function (pt) {
+    'use strict';
+
+    pt.constructor = function (elem) {
+
+        elem.text('This is `.my-class` element.');
+
+    };
+
+});
+
+</script>
+
+<h2>define-class.js DEMO</h2>
+
+<p>See the source code!</p>
+
+<hr />
+
+
+<span class="my-class"></span>
