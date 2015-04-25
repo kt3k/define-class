@@ -14,15 +14,25 @@
     if (typeof subclass !== 'function') throw new Error('subclass not found. define-class depends on subclass.js (https://github.com/kt3k/subclass).');
 
 
-    $.defineClass = function (name, defining) {
+    /**
+     * Defines a custom class of the given name using the parent class and defining function.
+     *
+     * @param {String} name The name
+     * @param {Function} [parentClass] The parentClass of the internal defining class
+     * @param {Function} defining The defining function for "intenal definig class", not the defining function for the custom class itself
+     * @return {Function} The intenal defining function, which is possibly useful when you want to extend it.
+     */
+    $.defineClass = function (name, parentClass, defining) {
 
-        var CustomClass = subclass(defining);
+        var CustomClass = subclass(parentClass, defining);
 
         $.registerCustomClass(name, function (elem) {
 
             var customClass = new CustomClass(elem);
 
         });
+
+        return CustomClass;
     };
 
 }(window.jQuery, window.subclass));
