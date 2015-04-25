@@ -38,7 +38,7 @@ $.defineClass('my-class', function (pt) {
 
 The first argument of the defining function is the prototype of the defining (internal) class of the custom class. This internal class will be instantiated when the custom class will be initialized and the first argument for the constructor is the jquery object of the initializing custom class element.
 
-See the [DEMO](https://kt3k.github.io/define-class/test.html)
+See the [DEMO](https://kt3k.github.io/define-class/test.html) and its source code.
 
 # License
 
